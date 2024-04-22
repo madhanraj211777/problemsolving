@@ -1,0 +1,27 @@
+package second;
+
+public class hi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num1=0;
+int num2=1;
+int num3;
+count=10;
+for(int i=0;i<=count;i++) {
+	if(i==0) {
+		System.out.print(i+" ");
+	}
+	else if(i==1) {
+		System.out.print(i+" ");
+	}
+	else {
+		num3=num1+num2;
+		System.out.print(num3+" ");
+		num1=num2;
+		num2=num3;
+	}
+}
+	}
+
+}
