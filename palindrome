@@ -1,0 +1,23 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+int num;
+int temp;
+int rev=0;
+Scanner scan =new Scanner(System.in);
+System.out.println("Enter the number:");
+num=scan.nextInt();
+temp=num;
+while(num>0){
+  
+    rev=(rev*10)+num%10;
+    num=num/10;
+}
+if(temp==rev){
+    System.out.println(rev+",the number is palindrome");
+}else{
+    System.out.println(rev+" ,the number is not palindrome");
+}
+
+    }
+}
