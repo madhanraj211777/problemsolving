@@ -1,0 +1,58 @@
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+    Scanner scan=new Scanner(System.in);
+    int num;
+    int amstrong=0;
+    int r=0;
+    int temp;
+    int digit;
+    int rev=0;
+    int c=0;
+    int a;
+    System.out.println("enter the number ");
+    num=scan.nextInt();
+    temp=num; 
+     a=temp;
+      while(num>0){
+          rev=(rev*10)+(num%10);
+          c=c+1;
+          num=num/10;
+      }
+switch(c){
+case 1:
+   {
+       System.out.println(temp*1);
+       break;
+   }
+   case 3:{ 
+        while(temp>0){
+        r=temp%10;
+        amstrong=amstrong+(r*r*r);
+        temp=temp/10;
+    }
+    if(a==amstrong){
+        System.out.println("amstrong number "+amstrong);
+    }
+        break;
+    }
+case 4:{
+       while(temp>0){
+        r=temp%10;
+        amstrong=amstrong+(r*r*r*r);
+        temp=temp/10;
+        
+    }
+    if(a==amstrong){
+        System.out.println("amstrong number "+amstrong);
+    }
+     break;
+  }
+default:
+     System.out.println(" not a amstrong number" );
+    
+    }
+    
+    }
+}
