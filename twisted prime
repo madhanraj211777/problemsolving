@@ -1,0 +1,53 @@
+package second;
+
+import java.util.Scanner;
+
+
+public class tprime {
+	
+	public static void main(String[] args) {Scanner scan =new Scanner(System.in);
+	int count=0;
+	int rev=0;
+	System.out.println("enter the number:");
+	int num=scan.nextInt();
+	for(int i=1;i<=num;i++) {
+		if(num%i==0) {
+			count=count+1;
+		}
+	}
+	if(count==2) {
+		System.out.println(num+" it is prime");
+		count=0;
+		while(num>0) {
+			rev=(rev*10)+(num%10);
+			num=num/10;
+			
+		}
+		for(int i=1;i<=rev;i++) {
+			if(rev%i==0) {
+				count=count+1;
+			}}
+		
+			
+	if(count==2) {		
+		
+		
+		
+		System.out.println(rev+" it is prime");
+		System.out.println("so, it isa twisted prime");
+		
+		
+		
+	}
+	else {
+		System.out.println(rev+"not a  prime");
+		System.out.println("so, it is not a twisted prime");
+	}
+	}
+	else {
+		System.out.println("it is not a  twisted prime");
+	}
+	
+	}
+
+}
