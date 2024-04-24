@@ -1,0 +1,23 @@
+package second;
+import java.util.*;
+
+public class detb {
+
+	public static void main(String[] args) {
+		
+Scanner scan=new Scanner(System.in);
+		int num;
+		int rem=0;
+		String binary="";
+		System.out.println("enter the decimal no");
+		num=scan.nextInt();
+		while(num>0) {
+		rem=num%2;
+		binary=rem+binary;
+		num=num/2;
+		}
+		System.out.println(binary);
+		
+	}
+
+}
