@@ -1,0 +1,47 @@
+package second;
+import java.util.*;
+
+public class as {
+
+	public static void main(String[] args) {
+		
+int num;
+int t;
+Scanner scan=new Scanner(System.in);
+System.out.println("enter the num");
+num=scan.nextInt();
+if(num<=9) {
+	t=num*num;
+	if(num==t%10) {
+		System.out.println(num+" "+t%10);
+		System.out.println(" an AutomorphicNumber");
+	}else {
+		System.out.println("not an AutomorphicNumber");
+	}
+	
+}
+else if(num>9 && num<=99) {
+	t=num*num;
+	if(num==t%100) {
+		System.out.println(num+" "+t%100);
+		System.out.println(" an AutomorphicNumber");
+	}else {
+		System.out.println("not an AutomorphicNumber");
+	}
+}
+else if(num>99 && num<=999) {
+	t=num*num;
+	if(num==t%1000) {
+		System.out.println(num+" "+t%1000);
+		System.out.println(" an AutomorphicNumber");
+	}else {
+		System.out.println("not an AutomorphicNumber");
+	}
+}
+else {
+	System.out.println("not an AutomorphicNumber");
+}
+
+	}
+
+}
