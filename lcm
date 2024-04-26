@@ -1,0 +1,27 @@
+package second;
+import java.util.*;
+public class lcms {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int num1,num2;
+		int max;
+		System.out.println("enter  the number1:");
+		num1=scan.nextInt();
+		System.out.println("enter the number2:");
+		num2=scan.nextInt();
+		max=(num1>num2)?num1:num2;
+		for(int i=1;i<=max;i++) {
+			if((max%num1==0)&&(max%num2==0)) {
+				System.out.println("lcm of "+num1+","+num2+"is"+max);
+				break;
+			}
+			max++;
+		}
+		
+		
+		
+
+	}
+
+}
