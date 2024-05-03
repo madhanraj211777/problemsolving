@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+    
+      System.out.println("enter the string");
+      String s=scan.nextLine();
+      String words[]=s.split(" ");
+      String revstring=" ";
+      for(int i=0;i<words.length;i++){
+          String word=words[i];
+          String rev="";
+          for(int j=word.length()-1;j>=0;j--){
+              rev=rev+word.charAt(j);
+              
+          }
+          revstring=revstring+rev+" ";
+          
+      }
+      System.out.println(revstring);
+    
+       
+       
+    }
+}
