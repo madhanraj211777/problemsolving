@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		String s1,s2;
+		System.out.println("enter the String 1:");
+		s1=scan.nextLine();
+		System.out.println("enter the  sub String:");
+		s2=scan.nextLine();
+		boolean result=s1.contains(s2);
+		if(result){
+		    System.out.println(s2 + " contain substring from "+s1);
+		}
+		else{
+		     System.out.println(s2 + " Not contain substring from "+s1);
+		}
+	
+		
+	    
+	}
+}
