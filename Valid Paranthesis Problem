@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the symbols:");
+        String s1 = scan.nextLine();
+        
+        int c1 = 0; 
+        int c2 = 0; 
+        int c3 = 0; 
+
+        for (int i = 0; i < s1.length(); i++) {
+            char currentChar = s1.charAt(i);
+            if (currentChar == '(') {
+                c1++;
+            } else if (currentChar == ')') {
+                c1--;
+                if (c1 < 0) {
+                    System.out.println("it is not valid balanced bracket");break;
+                    
+                }
+            } else if (currentChar == '[') {
+                c2++;
+            } else if (currentChar == ']') {
+                c2--;
+                if (c2 < 0) {
+                    System.out.println("it is not valid balanced bracket");break;
+                    
+                }
+            } else if (currentChar == '{') {
+                c3++;
+            } else if (currentChar == '}') {
+                c3--;
+                if (c3 < 0) {
+                    System.out.println("it is not valid balanced bracket");break;
+                    
+                }
+            }
+        }
+
+        
+        if (c1 == 0 && c2 == 0 && c3 == 0) {
+            System.out.println("it is valid balanced bracket");
+        } 
+    }
+}
