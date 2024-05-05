@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		String s1;
+		int count=0;
+		System.out.println("enter the String 1:");
+		s1=scan.nextLine();
+		char s2[]=s1.toCharArray();
+	
+		for(int i=0;i<s2.length;i++){
+		    for(int j=i+1;j<s2.length-1;j++)
+		   if(s2[i]==s2[j+1]){
+		       count=count+1;
+		       break;
+		   }
+		   if(count==1){
+		       break;
+		   }
+		}
+	
+		if(count== 0){
+		    System.out.println(" it is Isogram");
+		}
+		else{
+		     System.out.println(" not a Isogram");
+		}
+	
+	    
+	}
+}
