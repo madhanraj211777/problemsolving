@@ -1,0 +1,71 @@
+During the weekend, Ross Geller has decided to conduct some team games. He wants to split his friends into equal-sized teams. In some cases, some friends may be left out of the teams, and he wanted to use the left-out friends to assist him in conducting the team games. For instance, if there are 50 friends and they have to be divided into 7 equal-sized teams, then there will be 7 in each team and 1 friend will be left out. Ross asks for your help to automate this team-splitting task. Can you please help him out?
+
+Input Format
+
+Input consists of 2 integers. The first integer corresponds to the number of friends Ross has. The second integer corresponds to the number of teams.
+
+Constraints
+
+NA
+
+Output Format
+
+Refer sample input and output for formatting specifications.
+
+Sample Input 0
+
+60
+8
+Sample Output 0
+
+The number of friends in each team is 7 and left out is 4
+Sample Input 1
+
+78
+6
+Sample Output 1
+
+The number of friends in each team is 13 and left out is 0
+Submissions: 2701
+Max Score: 60
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+)
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        Scanner scan=new Scanner(System.in);
+8
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+9
+        int nfriends;
+10
+        int teamsize;
+11
+        nfriends=scan.nextInt();
+12
+        teamsize=scan.nextInt();
+13
+        System.out.println("The number of friends in each team is "+ nfriends/teamsize+" and left out is "+(nfriends%teamsize));
+14
+        
+15
+        
+16
+    }
+17
+}
