@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        int m=scan.nextInt();
+        int n=scan.nextInt();
+        int c=0;
+        int i=0;
+        int j=0;
+        boolean aresame=true;
+        if(m!=n){
+             System.out.println("Not Same");
+            return;
+        }int a[]=new int[m];
+        int b[]=new int[n];
+        for(i=0;i<a.length;i++){
+            a[i]=scan.nextInt();
+        }
+        for(j=0;j<a.length;j++){
+            b[j]=scan.nextInt();
+        }
+            for(i=0;i<a.length;i++){
+                if(a[i]!=b[i]){
+                   aresame=false;
+                   System.out.println("Not Same");
+                    break;
+                }   
+            }
+        if(aresame){
+             System.out.println("Same");
+        }
+    }
+}
