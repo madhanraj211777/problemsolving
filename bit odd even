@@ -1,0 +1,34 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter the number to find odd or even:");
+		int n=scan.nextInt();
+		if((n&1)==0){
+		    System.out.println("even");
+		}else{
+		    System.out.println("odd");
+		}
+	}
+}
+/*
+1->0001
+2->0010
+3->0110
+4->1000
+if even number mean end with 0
+if odd number mean end with 1
+so logic is 
+if even
+2->0010
+   0001
+----------
+&  0000 answer should be 0
+if odd 
+1->0001
+- 00001
+-------
+&  0001
+if output come 1 mean its odd number
+*/
