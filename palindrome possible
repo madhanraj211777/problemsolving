@@ -1,0 +1,38 @@
+public class PalindromeNumberChecker {
+
+    public static int isPalinNumPossible(int input1) {
+       
+        int[] a = new int[10];
+        int c = 0;
+
+        
+        while (input1 != 0) {
+            a[input1 % 10] += 1;
+            input1 = input1 / 10;
+        }
+
+       
+        for (int i = 0; i < 10; i++) {
+            if (a[i] % 2 != 0) {
+                c++;
+            }
+        }
+
+       
+        if (c > 1) {
+            return 1;
+        } else {
+            return 2;
+        }
+    }
+
+    public static void main(String[] args) {
+        int number = 1231;
+        int result = isPalinNumPossible(number);
+        if (result == 2) {
+            System.out.println("A palindrome is possible with the digits of " + number);
+        } else {
+            System.out.println("A palindrome is NOT possible with the digits of " + number);
+        }
+    }
+}
