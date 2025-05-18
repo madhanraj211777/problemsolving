@@ -1,0 +1,43 @@
+
+#include <stdio.h>
+
+int main() {
+    int number;
+    printf("enter a number:\n");
+    scanf("%d",&number);
+    
+    int copy=number;
+    int number1;
+    number1=number;
+    int count=0;
+    int rem=0;
+    int sum=1;
+    int answer;
+    while(number1!=0){
+        rem=number1%10;
+        number1=number1/10;
+        count++;
+    }
+    while(number>=0){
+          rem=number%10;
+         number=number/10;
+         if(rem){
+            
+             for(int i=0;i<count;i++){
+               sum=sum*rem;
+             }
+             answer=answer+sum;
+             sum=1;
+             
+         }else{
+             break;
+         }
+        
+    }
+    if(answer==copy){
+        printf("amstrong");
+    }else{
+         printf(" not amstrong");
+    }
+    return 0;
+}
